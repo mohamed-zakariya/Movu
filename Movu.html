@@ -21,8 +21,36 @@
                   <li><a class="dropdown-item" href="#">Series</a></li>
                 </ul>
             </div>
-            <input  placeholder="Search MOVU">
-             <i class="fa-solid fa-magnifying-glass"></i>
+            <div id="searching">
+                <div class="search_bar">
+                    <input  placeholder="Search MOVU" onkeyup="captureString()" id="inputField" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+
+                </div>
+                <div id="search_result">
+                   
+                    <!-- <div id="search_list">
+                        <img width="40px" height="50px" src="images/1.png" alt="" />
+                        <div>
+                            <div>the amazing spiderman </div>
+                            <div>ascascascac</div>  
+                        </div>
+                    </div>
+                    <hr width="100%">
+                    <div id="search_list">
+                        <img width="40px" height="50px" src="images/1.png" alt="" />
+                        <div>
+                            <div>the amazing spiderman </div>
+                            <div>ascascascac</div>  
+                        </div>
+                    </div> -->
+                </div>  
+            </div>
+            <!-- <input type="text" id="searchInput" onkeyup="searchItems()" placeholder="Type to search..."> -->
+
+            <ul id="searchResults">
+            <!-- Results will be populated here -->
+            </ul>
             
             <div style="display: flex;justify-content: space-around;margin: 0px 25px;">
                 <!-- <i style="color: white;" class="fa-solid fa-film"></i> -->
@@ -144,3 +172,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
